@@ -1,0 +1,21 @@
+{
+  "label": "Cloud Cost Management: Phase 1",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/multicloud_billing.png",
+    "tagline": "A consolidated reporting view of cloud spend across AWS, Azure and GCP."
+  },
+  "constants": {
+    "MULTICLOUD_DASHBOARD_CONNECTION": {
+      "label": "Connection Name",
+      "value_constraint": "connection",
+      "description": "A BigQuery Standard SQL Connection"
+    }
+  },
+  "models": [
+    {
+      "name": "marketplace_multicloud_billing",
+      "connection_constant": "MULTICLOUD_DASHBOARD_CONNECTION"
+    }
+  ]
+}
